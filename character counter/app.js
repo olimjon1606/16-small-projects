@@ -5,9 +5,9 @@ const rem = 50
 textareaEl.addEventListener("keyup", () => {
     updateCounter()
 })
-
+updateCounter()
 function updateCounter() {
     totalCounterEl.innerText = textareaEl.value.length;
-    remainingCounterEl.innerText = rem - textareaEl.value.length;
+    remainingCounterEl.innerText = textareaEl.getAttribute("maxLength") - textareaEl.value.length;
 
 }
