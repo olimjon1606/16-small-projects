@@ -30,6 +30,7 @@ body {
     background-color: #fff;
     width: 100%;
     justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .navbar ul{
     display: flex;
@@ -40,6 +41,13 @@ body {
     margin: 0 10px;
     color: #000;
     font-family: cursive;
+}
+.navbar.active{
+    background-color: #000;
+    
+}
+.navbar.active ul li a{
+    color: #fff;
 }
 .navbar ul li a:hover{
     color: red;
